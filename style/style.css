@@ -130,20 +130,6 @@ ul {
 
 
 @media(max-width: 800px) {
-    .mobil__name {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 15px;
-        min-height: 40px;
-
-        padding: 20px 14px;
-        font-size: 1rem;
-        min-height: 40px
-    }
-
-
-
     .mobil__item {
         border-bottom: 0.7px solid #EDD5C2;
     }
@@ -196,10 +182,10 @@ ul {
     }
 
     .navigation__wrapp-name {
-        font-family: 'montserrat-medium';
+        font-family: montserrat-semibold, Arial, sans-serif;
         font-style: normal;
         font-weight: 600;
-        font-size: 10px;
+        font-size: 12px;
         line-height: 12px;
         color: #000000;
 
@@ -232,5 +218,280 @@ ul {
         top: 20px;
         right: -15px;
 
+    }
+}
+
+/*--------------main__slaider------------*/
+
+.main__slaider {
+    margin: 80px auto;
+}
+
+.main__slaider-wrapp {
+    max-width: 1650px;
+    margin: 0 auto;
+}
+
+.main__slaider-box {
+    position: relative;
+}
+
+.main__slaider-box img {
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+}
+
+.slaider__box-wrapp {
+    position: absolute;
+    padding: 68px 0 0 106px;
+    top: 0;
+    left: 10px;
+    z-index: 1;
+}
+
+.slaider__wrapp-title {
+    font-family: 'El Messiri', sans-serif;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 60px;
+    letter-spacing: 0.025em;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.slaider__wrapp-text {
+    font-family: 'El Messiri', sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 47px;
+    color: #000000;
+    margin-bottom: 57px;
+}
+
+.slaider__wrapp-subtitile {
+    font-family: 'El Messiri', sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 56px;
+    letter-spacing: 0.025em;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.slaider__wrapp-text-2 {
+    font-family: 'El Messiri', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 31px;
+    color: #000000;
+    margin-top: 40px;
+}
+
+.slaider__box-btn-1,
+.slaider__box-btn-2,
+.slaider__box-btn-3,
+.slaider__box-btn-4,
+.slaider__box-btn-5,
+.slaider__box-btn-6,
+.slaider__box-btn-7,
+.slaider__box-btn-8 {
+    font-family: 'El Messiri', sans-serif;
+    padding: 8px 48px;
+    background: #E18A6B;
+    border-radius: 11px;
+    color: #fff;
+    border: 1px solid transparent;
+    transition: 0.3s ease-in-out;
+    font-size: 26px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.slaider__box-btn-1:hover {
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid #E18A6B;
+    color: #E18A6B;
+}
+
+.slaider__box-btn-2:hover {
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid #CAF479;
+    color: #CAF479;
+}
+
+
+.slaider__box-btn-2 {
+    background: #CAF479;
+    color: #1D5027;
+}
+
+
+.slaider__box-btn-3 {
+    background: #F39ACA;
+}
+
+.slaider__box-btn-3:hover {
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid #F39ACA;
+    color: #F39ACA;
+}
+
+.slaider__box-btn-4 {
+    background: #FFDD92;
+}
+
+.slaider__box-btn-4:hover {
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid #FFDD92;
+    color: #FFDD92;
+}
+
+.slaider__box-btn-5 {
+    background: #FF7B9B;
+}
+
+.slaider__box-btn-5:hover {
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid #FF7B9B;
+    color: #FF7B9B;
+}
+
+.slaider__box-btn-6 {
+    background: #FF7A7A;
+}
+
+.slaider__box-btn-6:hover {
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid #FF7A7A;
+    color: #FF7A7A;
+}
+
+
+.slaider__box-btn-7 {
+    background: #4DDFFF;
+}
+
+.slaider__box-btn-7:hover {
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid #4DDFFF;
+    color: #4DDFFF;
+}
+
+.slaider__box-btn-8 {
+    background: #FF7B8F;
+}
+
+.slaider__box-btn-8:hover {
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid #FF7B8F;
+    color: #FF7B8F;
+}
+
+.slick-dots li button:before {
+    color: #DD9EAB;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #D7537A;
+}
+
+/*-------------media main__slaider------------*/
+@media(max-width:1080px) {
+
+    .main__slaider-box img {
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+    }
+
+
+    .slaider__wrapp-title {
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 15px;
+    }
+
+    .slaider__wrapp-text {
+        font-size: 18px;
+        line-height: 31px;
+
+        margin-bottom: 30px;
+    }
+
+    .slaider__wrapp-subtitile {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+
+    .slaider__wrapp-text-2 {
+        font-size: 15px;
+        line-height: 20px;
+        margin-top: 22px;
+    }
+
+    .slaider__box-btn-1,
+    .slaider__box-btn-2,
+    .slaider__box-btn-3,
+    .slaider__box-btn-4,
+    .slaider__box-btn-5,
+    .slaider__box-btn-6,
+    .slaider__box-btn-7,
+    .slaider__box-btn-8 {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 680px) {
+    .slaider__box-wrapp {
+        padding: 60px 0 0 30px;
+    }
+
+}
+
+@media(max-width: 500px) {
+    .slaider__box-wrapp {
+        padding: 80px 10px;
+    }
+
+    .main__slaider-box img {
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+    }
+
+
+    .slaider__wrapp-title {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .slaider__wrapp-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .slaider__wrapp-subtitile {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+
+    .slaider__wrapp-text-2 {
+        font-size: 15px;
+        line-height: 20px;
+        margin-top: 22px;
+    }
+
+    .slaider__box-btn-1,
+    .slaider__box-btn-2,
+    .slaider__box-btn-3,
+    .slaider__box-btn-4,
+    .slaider__box-btn-5,
+    .slaider__box-btn-6,
+    .slaider__box-btn-7,
+    .slaider__box-btn-8 {
+        font-size: 18px;
     }
 }
