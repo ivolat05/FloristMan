@@ -273,7 +273,7 @@ input[type=radio].visually-hidden {
     padding-right: 18px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -1297,8 +1297,27 @@ input[type=radio].visually-hidden {
     margin-top: 85px
 }
 
+.navigation__list {
+    padding: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -8px
+}
 
-
+.navigation__item {
+    position: relative;
+    height: 358px;
+    width: calc(25% - 16px);
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-bottom: 24px
+}
 
 .navigation__photo {
     width: 100%;
@@ -1308,12 +1327,47 @@ input[type=radio].visually-hidden {
 }
 
 .navigation__name {
-    text-align: left;
+    position: absolute;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
     font-weight: 400;
     font-family: montserrat-semibold, Arial, sans-serif;
     font-size: 1.6rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 95px;
+    background-color: rgba(255, 248, 245, .85);
+    -webkit-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0
 }
 
+.navigation__name::after,
+.navigation__name::before {
+    position: absolute;
+    content: "";
+    background-image: url(../img/gold-item.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    -webkit-background-size: contain;
+    background-size: contain;
+    width: 100%;
+    height: 90%;
+    top: 5%;
+    left: 5px
+}
 
 .navigation__name::before {
     -webkit-transform: scaleX(-1);
@@ -1773,8 +1827,18 @@ input[type=radio].visually-hidden {
         margin-top: 16px
     }
 
+    .navigation__list {
+        margin-right: -6px;
+        margin-left: -6px
+    }
 
-
+    .navigation__item {
+        width: calc(50% - 12px);
+        height: 210px;
+        margin-right: 6px;
+        margin-left: 6px;
+        margin-bottom: 13px
+    }
 
     .navigation__name {
         min-height: 60px;
@@ -1967,15 +2031,13 @@ input[type=radio].visually-hidden {
     }
 
     .navigation__name {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 15px;
-        min-height: 40px;
-
-        padding: 20px 14px;
+        font-size: 1rem;
+        min-height: 40px
     }
 
+    .navigation__item {
+        height: 140px
+    }
 
     .contacts__social {
         width: 27px;

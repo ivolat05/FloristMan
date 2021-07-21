@@ -130,6 +130,8 @@ ul {
 
 
 @media(max-width: 800px) {
+
+
     .look {
         overflow: hidden;
     }
@@ -154,12 +156,12 @@ ul {
         display: block;
     }
 
-    .navigation__name {
+    .mobil__name {
 
         padding: 20px 14px;
     }
 
-    .navigation__item {
+    .mobil__item {
         border-bottom: 0.7px solid #EDD5C2;
     }
 
