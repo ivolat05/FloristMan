@@ -11,6 +11,7 @@
     <link rel='stylesheet' href='style/reset.css'>
     <link rel="stylesheet" href="style/main.min.css">
     <link rel="stylesheet" href="style/magnific-popup.css">
+    <link rel='stylesheet' href='style/nouislider.min.css'>
     <link rel='stylesheet' href='style/style.css'>
 
 </head>
@@ -570,7 +571,155 @@
         <div class="conteiner">
             <div class="catalog__wrapp">
                 <div class="catalog__wrapp-box">
+                    <div class="catalog__wrapp-inner">
+                        <h3 class="catalog__box-title">
+                            Категории
+                        </h3>
+                        <div class="catalog__box-conteiner">
+                            <label>
+                                <input class="catalog__checkbox" type="checkbox" name='name'>
+                                <span class="catalog__checkbox-content">
+                                    Категория (0)
+                                </span>
+                            </label>
+                            <label>
+                                <input class="catalog__checkbox" type="checkbox" name='name'>
+                                <span class="catalog__checkbox-content">
+                                    Категория (0)
+                                </span>
+                            </label>
+                            <label>
+                                <input class="catalog__checkbox" type="checkbox" name='name'>
+                                <span class="catalog__checkbox-content">
+                                    Категория (0)
+                                </span>
+                            </label>
+                            <label>
+                                <input class="catalog__checkbox" type="checkbox" name='name'>
+                                <span class="catalog__checkbox-content">
+                                    Категория (0)
+                                </span>
+                            </label>
+                            <label>
+                                <input class="catalog__checkbox" type="checkbox" name='name'>
+                                <span class="catalog__checkbox-content">
+                                    Категория (0)
+                                </span>
+                            </label>
+                            <label>
+                                <input class="catalog__checkbox" type="checkbox" name='name'>
+                                <span class="catalog__checkbox-content">
+                                    Категория (0)
+                                </span>
+                            </label>
+                        </div>
+                        <h3 class="catalog__box-title">
+                            Повод
+                        </h3>
+                        <div class="catalog__box-conteiner catalog__box-conteiner-2">
+                            <label>
+                                <input class="catalog__checkbox" type="checkbox" name='name'>
+                                <span class="catalog__checkbox-content">
+                                    Повод (0)
+                                </span>
+                            </label>
+                            <label>
+                                <input class="catalog__checkbox" type="checkbox" name='name'>
+                                <span class="catalog__checkbox-content">
+                                    Повод (0)
+                                </span>
+                            </label>
+                            <label>
+                                <input class="catalog__checkbox" type="checkbox" name='name'>
+                                <span class="catalog__checkbox-content">
+                                    Повод (0)
+                                </span>
+                            </label>
+                            <label>
+                                <input class="catalog__checkbox" type="checkbox" name='name'>
+                                <span class="catalog__checkbox-content">
+                                    Повод (0)
+                                </span>
+                            </label>
+                            <label>
+                                <input class="catalog__checkbox" type="checkbox" name='name'>
+                                <span class="catalog__checkbox-content">
+                                    Повод (0)
+                                </span>
+                            </label>
+                            <label>
+                                <input class="catalog__checkbox" type="checkbox" name='name'>
+                                <span class="catalog__checkbox-content">
+                                    Повод (0)
+                                </span>
+                            </label>
+                        </div>
+                        <h3 class="catalog__box-title">
+                            Кому
+                        </h3>
+                        <div class="catalog__box-conteiner catalog__box-conteiner-2">
+                            <label>
+                                <input class="catalog__checkbox" type="checkbox" name='name'>
+                                <span class="catalog__checkbox-content">
+                                    Кому (0)
+                                </span>
+                            </label>
+                            <label>
+                                <input class="catalog__checkbox" type="checkbox" name='name'>
+                                <span class="catalog__checkbox-content">
+                                    Кому (0)
+                                </span>
+                            </label>
+                            <label>
+                                <input class="catalog__checkbox" type="checkbox" name='name'>
+                                <span class="catalog__checkbox-content">
+                                    Кому (0)
+                                </span>
+                            </label>
+                            <label>
+                                <input class="catalog__checkbox" type="checkbox" name='name'>
+                                <span class="catalog__checkbox-content">
+                                    Кому (0)
+                                </span>
+                            </label>
+                            <label>
+                                <input class="catalog__checkbox" type="checkbox" name='name'>
+                                <span class="catalog__checkbox-content">
+                                    Кому (0)
+                                </span>
+                            </label>
+                            <label>
+                                <input class="catalog__checkbox" type="checkbox" name='name'>
+                                <span class="catalog__checkbox-content">
+                                    Кому (0)
+                                </span>
+                            </label>
+                            <label>
+                                <input class="catalog__checkbox" type="checkbox" name='name'>
+                                <span class="catalog__checkbox-content">
+                                    Кому (0)
+                                </span>
+                            </label>
+                        </div>
 
+                    </div>
+                    <div class="catalog__slaider-line">
+                        <h3 class="catalog__line-title">
+                            Фильтр
+                        </h3>
+                        <div class="slaider-line" id='slaider-line'></div>
+                    </div>
+                    <div class="catalog__wrapp-wrapper">
+                        <button class='catalog-btn'>
+                            Фильтровать
+                        </button>
+                        <div class="catalog__wrapper-content">
+                            <h3 class="catlog__slaider-content">
+                                Цена: <span id='priceMin'>000</span> грн-<span id='priceMax'>000</span>
+                                грн
+                            </h3>
+                        </div>
+                    </div>
                 </div>
                 <div class="catalog__wrapp-conteiner">
                     <div class="products__item">
@@ -951,16 +1100,10 @@
                             <button class="products__button button">Заказать</button>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
     </section>
-
-
-
-
     <footer class="footer">
         <div class="footer__wrapper">
             <a class="footer__logo" href="index.html">
@@ -1131,6 +1274,7 @@
     <script src="script/jquery.magnific-popup.js"></script>
     <script src="script/phone_mask.min.js"></script>
     <script src="script/slick/slick.min.js"></script>
+    <script src='script/nouislider.min.js'></script>
     <script src="script/main.min.js"></script>
     <script src='script/main2.js'></script>
 
