@@ -1464,17 +1464,26 @@ ul {
     height: 5px;
 }
 
-.noUi-origin::after {
-    content: url('../img/img/Ellipse.svg');
-    position: relative;
-    top: -9px;
-    left: 21px;
+
+.noUi-horizontal .noUi-handle {
+    background: #D7537A;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    box-shadow: none;
+    border: none;
 }
 
-.noUi-origin {
-    background: rgba(255, 255, 255, 0);
+html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
+    right: -7px;
+    top: -4px;
+    left: auto;
 }
 
+.noUi-handle:after,
+.noUi-handle:before {
+    display: none;
+}
 
 .noUi-connect {
     background: #000;
