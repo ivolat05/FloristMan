@@ -1326,3 +1326,18 @@ ul {
     }
 
 }
+
+/*-------------cotolog--------------*/
+
+.catalog__wrapp-conteiner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catalog__product-link img {
+    width: 100%;
+}
+
+.catalog__hot-list {
+    opacity: 0;
+}
