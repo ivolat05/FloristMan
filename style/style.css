@@ -12,7 +12,16 @@ ul {
     list-style: none;
 }
 
+.conteiner {
+    padding: 0 10px;
+    max-width: 1190px;
+    margin: 0 auto;
+}
+
 /*-----------------header------------*/
+.footer__logo {
+    padding-top: 42px;
+}
 
 .header__open-btn {
     display: none;
@@ -218,6 +227,17 @@ ul {
         top: 20px;
         right: -15px;
 
+    }
+}
+
+
+.upper__block-title {
+    padding-bottom: 220px;
+}
+
+@media(max-width:768px) {
+    .upper-block {
+        display: none;
     }
 }
 
@@ -495,3 +515,194 @@ ul {
         font-size: 18px;
     }
 }
+
+/*--------------authorization--------------*/
+
+.authorization {}
+
+.authorization__wrapp {
+    max-width: 326px;
+    background: #FFF0E4;
+    border-radius: 10px;
+}
+
+.authorization__wrapp-registration,
+.authorization__wrapp-input {
+    display: none;
+}
+
+.authorization__active {
+    display: block;
+}
+
+.authorization__registation-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+
+    color: #272626;
+    padding-bottom: 23px;
+
+}
+
+.authorization__regixtration-text {
+    font-family: 'lato-medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #000000;
+
+    padding-bottom: 20px;
+}
+
+.authorization__registration-transition {
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.authorization__registration-transition:hover {
+    text-decoration-line: underline;
+    color: #FD4F79;
+}
+
+
+.authorization__form {
+    display: block;
+    max-width: 306px;
+    margin: 0 auto;
+}
+
+.authorization__form-input {
+    width: 100%;
+    margin-bottom: 10px;
+
+    background: #FFF8F5;
+    border-radius: 17px;
+    padding: 14px 20px;
+
+    font-family: 'lato-medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 119.18%;
+    color: rgba(0, 0, 0, 0.54);
+    border: none;
+}
+
+.authorization__form-input::placeholder {
+
+    font-family: 'lato-medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 119.18%;
+    color: #000000;
+
+}
+
+.authorization__name:focus {
+    background: url('../img/img/name.svg'),
+        #FFF8F5;
+    background-repeat: no-repeat;
+    background-size: 20% 20%;
+    background-position: top 4px left;
+}
+
+.authorization__password:focus {
+    background: url('../img/img/password__input.svg'),
+        #FFF8F5;
+    background-repeat: no-repeat;
+    background-size: 20% 20%;
+    background-position: top 4px left;
+}
+
+.authorization__email:focus {
+    background: url('../img/img/E-mail.svg'),
+        #FFF8F5;
+    background-repeat: no-repeat;
+    background-size: 20% 20%;
+    background-position: top 4px left;
+}
+
+
+.authorization__tell:focus {
+    background: url('../img/img/tell.svg'),
+        #FFF8F5;
+    background-repeat: no-repeat;
+    background-size: 20% 20%;
+    background-position: top 4px left;
+}
+
+.authorization__name:focus::placeholder,
+.authorization__tell:focus::placeholder,
+.authorization__password:focus::placeholder,
+.authorization__email:focus::placeholder {
+    opacity: 0;
+}
+
+.authorization-btn {
+    display: block;
+    background: #D7537A;
+    border-radius: 37px;
+
+    font-family: 'lato-semibold', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 123.68%;
+    text-align: center;
+
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    padding: 11px 24px;
+    transition: .4s;
+
+    margin: 10px auto;
+}
+
+.authorization-btn-2 {
+    padding: 11px 67px;
+}
+
+.authorization-btn:hover {
+    background: #FD4F79;
+}
+
+#password-input-2,
+#password-input {
+    padding: 14px 33px 14px 20px;
+}
+
+.password {
+    width: 100%;
+    position: relative;
+}
+
+.password-control {
+    position: absolute;
+    top: 3px;
+    left: 258px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('../img/img/password__hidden.svg') 0 0 no-repeat;
+}
+
+.password-control.view {
+    background: url('../img/img/password.svg') 0 0 no-repeat;
+}
+
+
+
+@media(max-width: 340px) {
+    .password-control {
+        left: 236px;
+    }
+
+}
+
+/*-------------basket------------*/
