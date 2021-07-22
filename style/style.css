@@ -668,6 +668,11 @@ ul {
     background: #FD4F79;
 }
 
+.authorization-btn:active {
+    background: #FB7E98;
+}
+
+
 #password-input-2,
 #password-input {
     padding: 14px 33px 14px 20px;
@@ -1006,6 +1011,10 @@ ul {
     color: #272626;
 }
 
+.order__inner-wrapp label {
+    cursor: pointer;
+}
+
 .order__radio:checked+span {
     color: #FD4F79;
 }
@@ -1032,6 +1041,12 @@ ul {
 /*--------------media order----------------*/
 
 @media(max-width: 768px) {
+
+    .section__title-title {
+        font-size: 28px;
+        line-height: 16px;
+
+    }
 
     .order__title-title {
         text-align: left;
@@ -1074,6 +1089,14 @@ ul {
 }
 
 @media(max-width: 480px) {
+    .section__title {
+        padding: 18px 0 12px;
+    }
+
+    .section__title-title {
+        font-size: 16px;
+        line-height: 20px;
+    }
 
     .order__title {
         padding: 0 0 10px;
@@ -1121,4 +1144,185 @@ ul {
     .order__inner-box-wrapper h2 {
         padding-bottom: 7px;
     }
+}
+
+/*-----------------purchase-----------------------*/
+.purchase__form {
+    max-width: 770px;
+    margin: 0 auto;
+}
+
+.purchase__conteiner {
+    background: url('../img/img/background__list.svg')no-repeat left 125px top 35px,
+        url('../img/img/background__list-2.svg') no-repeat right bottom 133px;
+}
+
+.purchase__form-btn {
+    font-family: 'lato-medium';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    padding: 22px 45px;
+    margin-top: 30px;
+}
+
+.purchase__form-input,
+.purchase__form-address {
+    font-family: 'lato-medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 119.18%;
+    color: rgba(0, 0, 0, 0.54);
+    border-radius: 45px;
+    padding: 24px 45px;
+    margin-bottom: 20px;
+}
+
+.purchase__form-input::placeholder,
+.purchase__form-address::placeholder {
+    font-family: 'lato-medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 119.18%;
+    color: rgba(0, 0, 0, 0.54);
+    border-radius: 45px;
+}
+
+
+.purchase__form-input:focus {
+    background-position: top 4px left 0px;
+}
+
+
+.purchase__form-address:focus {
+    background: url('../img/img/adress.svg'),
+        #FFF8F5;
+    background-repeat: no-repeat;
+    background-size: 20% 20%;
+    background-position: top 4px left 25px;
+}
+
+.purchase__wrapp-box {
+    max-width: 604px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 36px;
+
+    font-family: 'lato-medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #8E8D6F;
+}
+
+.purchase__wrapp-box label {
+    cursor: pointer;
+}
+
+.purchase__radio {
+    opacity: 0;
+}
+
+.purchase__radio:checked+span {
+    text-decoration: underline;
+    color: #272626;
+}
+
+
+@media(max-width: 768px) {
+    .purchase__conteiner {
+        background: #FFF0E4;
+    }
+
+    .purchase__form-btn {
+        font-size: 20px;
+        line-height: 26px;
+        padding: 17px 38px;
+
+    }
+
+    .purchase__form-input,
+    .purchase__form-address {
+        font-size: 27px;
+        line-height: 25px;
+        padding: 15px 38px;
+    }
+
+    .purchase__form-input::placeholder,
+    .purchase__form-address::placeholder {
+        font-size: 27px;
+        line-height: 25px;
+
+    }
+
+    .purchase__form-input:focus {
+        background-position: left 0px;
+    }
+
+
+    .purchase__form-address:focus {
+        background-position: top 4px left 27px;
+    }
+
+    .purchase__form {
+        max-width: 500px;
+    }
+
+    .purchase__wrapp-box {
+        max-width: 400px;
+    }
+}
+
+@media(max-width: 480px) {
+    .purchase__form {
+        max-width: 319px;
+    }
+
+    .purchase__form-btn {
+        font-size: 14px;
+        line-height: 17px;
+        padding: 10px 21px;
+        margin-top: 13px;
+    }
+
+    .purchase__wrapp {
+        padding-bottom: 13px;
+    }
+
+    .purchase__form-input,
+    .purchase__form-address {
+        font-size: 10px;
+        line-height: 119.18%;
+        padding: 9px 19px;
+        margin-bottom: 5px;
+    }
+
+    .purchase__form-input::placeholder,
+    .purchase__form-address::placeholder {
+        font-size: 10px;
+        line-height: 119.18%;
+    }
+
+    .purchase__form-input:focus {
+        background-position: left 0px;
+    }
+
+
+    .purchase__form-address:focus {
+        background-position: top 4px left 8px;
+    }
+
+    .purchase__wrapp-box {
+        max-width: 260px;
+
+        padding-bottom: 0;
+        font-size: 9px;
+        line-height: 11px;
+    }
+
 }
