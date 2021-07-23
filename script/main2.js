@@ -68,32 +68,81 @@ $(document).ready(function () {
     $('.authorization-popup-active').magnificPopup({});
 
 
+    //card
+    $('.card__list--scroll').not('.slick-initialized').slick({
+        dots: true,
+        dotsClass: "my-dots",
+        arrows: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: false,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+            }
+        }, {
+            breakpoint: 850,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        }]
+    });
 
-
-    // nouislider
-
-    const slaider = document.getElementById('slaider-line');
-
-    noUiSlider.create(slaider, {
-
-        start: [0, 5000],
-        connect: true,
-        range: {
-            'min': 0,
-            'max': 5000
+    window.addEventListener("resize", function () {
+        if (window.innerWidth > 500) {
+            $('.card__list--scroll').not('.slick-initialized').slick({
+                dots: true,
+                dotsClass: "my-dots",
+                arrows: false,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: false,
+                responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                }, {
+                    breakpoint: 850,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }]
+            });
+        } else {
+            $('.card__list--scroll').filter('.slick-initialized').slick('unslick');
         }
     });
 
-    let priceMin = document.getElementById('priceMin'),
-        priceMax = document.getElementById('priceMax');
+    const slaiderBtn = document.querySelectorAll('.card__slaider-img');
+    const slaiderItem = document.querySelectorAll('.card__foto-img');
+    slaiderBtn.forEach((item) => {
+        item.addEventListener('click', function () {
+            let activeBtn = item;
+            let activeId = activeBtn.getAttribute('data-open');
+            let activeTab = document.querySelector(activeId);
+            if (!activeBtn.classList.contains('-active')) {
+                slaiderItem.forEach(function (item) {
+                    item.classList.remove('--active');
+                });
+                activeTab.classList.add('--active');
+            }
+        });
+    });
 
+    $('.card__foto-slaider').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: '<button class="slick-btn slick-prev"><img src="../img/img/arrow-left.png" alt="prev"></button>',
+        nextArrow: '<button class="slick-btn slick-next"><img src="../img/img/arrow-right.png" alt="next"></button>'
 
-    slaider.noUiSlider.on('update', function (values, handle) {
-        if (handle) {
-            priceMax.innerHTML = values[handle];
-        } else {
-            priceMin.innerHTML = values[handle];
-        }
     });
 
 });
