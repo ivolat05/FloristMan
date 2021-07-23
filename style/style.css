@@ -2013,12 +2013,31 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 
 /*------------cabinet-------------------*/
 .cabinet {
-    margin-top: 130px;
+    margin: 130px auto 0;
+    max-width: 1440px;
+    background: url('../img/img/basdet__back.svg')no-repeat left top 0,
+        url('../img/img/basdet__back-2.svg') no-repeat right top 320px,
+        url('../img/img/cabinet-back.png') no-repeat left 50% top 670px;
+    z-index: 3;
+    padding-bottom: 80px;
 }
+
+
 
 .cabinet__wrapp {
     display: flex;
     justify-content: space-between;
+
+}
+
+
+.cabinet__back {
+    padding: 0;
+
+}
+
+.cabinet-footer {
+    margin-top: 0;
 }
 
 .cabinet__column-title {
@@ -2385,6 +2404,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 
     .cabinet {
         margin-top: 28px;
+        background: #FFF0E4;
     }
 
     .cabinet__title {
@@ -2436,6 +2456,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 @media(max-width: 550px) {
     .cabinet {
         margin-top: 5px;
+        padding-bottom: 18px;
     }
 
     .cabinet__title {
