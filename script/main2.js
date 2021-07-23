@@ -135,13 +135,32 @@ $(document).ready(function () {
         });
     });
 
+    const cabinetBtn = document.querySelectorAll('.cabinet__column-link');
+    const cabinetItem = document.querySelectorAll('.cabinet__column-2-box ');
+    cabinetBtn.forEach((item) => {
+        item.addEventListener('click', function () {
+            let activeBtn = item;
+            let activeId = activeBtn.getAttribute('data-active');
+            let activeTab = document.querySelector(activeId);
+            if (!activeBtn.classList.contains('-active')) {
+                cabinetItem.forEach(function (item) {
+                    item.classList.remove('cabinet--active');
+                });
+                activeTab.classList.add('cabinet--active');
+            }
+        });
+    });
+
+
+
+
     $('.card__foto-slaider').slick({
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: true,
-        prevArrow: '<button class="slick-btn slick-prev"><img src="../img/img/arrow-left.png" alt="prev"></button>',
-        nextArrow: '<button class="slick-btn slick-next"><img src="../img/img/arrow-right.png" alt="next"></button>'
+        prevArrow: '<button class="slick-btn slick-prev"><img src="img/img/arrow-left.png" alt="prev"></button>',
+        nextArrow: '<button class="slick-btn slick-next"><img src="img/img/arrow-right.png" alt="next"></button>'
 
     });
 
