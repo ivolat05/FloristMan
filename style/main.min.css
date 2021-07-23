@@ -1925,7 +1925,9 @@ input[type=radio].visually-hidden {
     }
 
     .upper-block__flower {
-        width: 120%
+        width: 120%;
+        height: 289px;
+
     }
 
     .upper-block__subtitle {
