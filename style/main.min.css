@@ -1389,7 +1389,9 @@ input[type=radio].visually-hidden {
 .navigation__name {
     text-align: left;
     font-weight: 400;
-    font-family: montserrat-semibold, Arial, sans-serif;
+    font-family: 'Open Sans',
+        sans-serif;
+
     font-size: 1.6rem;
 }
 

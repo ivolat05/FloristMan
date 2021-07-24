@@ -147,7 +147,8 @@ ul.breadcrumb li a:hover {
 }
 
 .header__menu__link-title {
-    font-family: 'montserrat-bold';
+    font-family: 'Open Sans',
+        sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -178,9 +179,10 @@ ul.breadcrumb li a:hover {
 .header__menu__link-link {}
 
 .header__menu__link-link-title {
-    font-family: 'montserrat-bold';
+    font-family: 'Open Sans',
+        sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 14px;
     line-height: 14px;
 
@@ -267,9 +269,11 @@ ul.breadcrumb li a:hover {
     }
 
     .navigation__wrapp-name {
-        font-family: montserrat-semibold, Arial, sans-serif;
+        font-family: 'Open Sans',
+            sans-serif;
+
         font-style: normal;
-        font-weight: 600;
+        font-weight: 400;
         font-size: 12px;
         line-height: 12px;
         color: #000000;
